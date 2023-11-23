@@ -25,7 +25,11 @@ public class GirlFriend {
     }
 
     public void setAge(int age) {
-        this.age = age;
+        if (age >= 18 && age <= 50) {
+            this.age = age;
+        } else {
+            System.out.println("非法参数");
+        }
     }
 
     public int getHeight() {
@@ -43,6 +47,7 @@ public class GirlFriend {
     public void setWeight(int weight) {
         this.weight = weight;
     }
+
     public void CallMe() {
         System.out.println("女朋友在和我打电话");
     }
